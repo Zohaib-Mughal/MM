@@ -1,41 +1,14 @@
 <html>
     <head>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' />
         <style>
-            #d1{
-                
-                
-                
-               width: 300px;
-               margin: 0 auto;
-
-               
-
-            }
-            a {
-                 text-decoration: none;
-                color: #007bff;
-                }
-            a:hover{
-                 text-decoration: underline;
-            }
-            p{
-                margin-top: 27px;
-                margin-left: 107px;
-                color: #fff;
-                text-align: center;
-                font-family: Roboto;
-                opacity: 1;
-                margin-bottom: 29px;
-
-
-            }
-            #phoneNo{
-                font-size: 15px;
-            }
-            #otp{
-                font-size: 15px;
-            }
             
+            body{
+                background-color: #11151c;
+                font-family: Roboto;
+                
+            }  
+             
             #main{
                 
                 display: flex;
@@ -43,30 +16,98 @@
                 flex-direction: column;
                 align-items: center;
             }
-            .OTP{
-                inline-size: 30px;
-                
-            }
-            body{
-                background-color: #11151c;
-                font-family: Roboto;
-                
-            }
 
-            .div-img {
-                    display: flex;
-                    justify-content: center;
-                    margin-top: 80px;
-                    margin-bottom: 20px;
-                    margin-left: 90px;
-                }
+            #containerImg {
+                display: flex;
+                justify-content: center;
+                margin-top: 80px;
+                margin-bottom: 20px;
+                margin-left: 90px;
+            }
 
             img {
                     width: 280px;
                     vertical-align: middle; 
-                    }
+            }
 
+            #ContainerPhoneTb{
+                font-size: 15px;
+            }
 
+            #prefix92{
+                padding: 15px;
+                background: #282c32;
+                color: white;
+                border-radius: 5px;
+                font-size: 14px;
+                position: relative;
+                left: -38px;
+            }
+
+            #prefixVerticalBar{
+                padding: 15px;
+                background: #282c32;
+                color: white;
+                border-radius: 5px;
+                font-size: 14px;
+                position: relative;
+                left: 37px;
+            }
+
+            #containerPrefix{
+                width: 160px;
+                margin: 0 auto;
+            }
+
+            #EnterNumberTb{
+                position: relative;
+                top:-32px;
+                left:60px;
+            }
+
+            ::placeholder{
+                color:white;
+                opacity: 50%;
+            }
+
+            input{
+                color: #fff;
+                flex-grow: 1;
+                font-size: 18px;
+                background: #282c32;
+                border: none;
+                outline: none;
+                padding: .5rem;
+                border-radius: 5px;
+                margin-left: 1px;
+                font-family: Roboto;
+            }
+
+            #containerContinueBtn{
+                width: 160px;
+               margin: 0 auto;
+            }
+            
+            #paraEnterOtp{
+                font-size: 15px;
+            }
+            
+            .OtpBox{
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                font-family: Roboto;
+            }
+            
+            p{
+                margin-top: 27px;
+                margin-left: 107px;
+                color: #fff;
+                text-align: center;
+                opacity: 1;
+                margin-bottom: 29px;
+            }
+          
             button{
                 background-color: #007bff;
                 border-color: #007bff;
@@ -80,156 +121,91 @@
                 font-weight: 400;
                 font-size: 15px;
             }
-            #button{
-                text-align: center;
-                width: 150px;
-                margin: 0 auto;
-                font-family: Roboto;
-            }
-            .div-otp {
+           
+            #containerOtpBox {
                 display: flex;
                 justify-content: center;
                 flex-direction: row;
                 gap: 15px; 
                 margin: -16px 420px 29px 527px;
-}
-
-            input{
-                   
-                   
-                   
-                   
-                   
-
-                    
-                    color: #fff;
-                    flex-grow: 1;
-                    font-size: 18px;
-                    background: #282c32;
-                    border: none;
-                    outline: none;
-                    padding: .5rem;
-                    border-radius: 5px;
-                    margin-left: 1px;
-                    font-family: Roboto;
-
-                    }
-            #no{
-                 padding: 5px 10px;
-                
             }
-            ::placeholder{
-                color:white;
-                opacity: 20%;
-            }
-            .OTP{
-
-                width: 50px;
-                height: 50px;
-                text-align: center;
-                font-family: Roboto;
-            }
-            #login{
+            
+           
+            #loginBtn{
                 margin-top: 20px;
                 width: 160px;
                margin: 0 auto;
             }
-            #span{
-                
-                width: 160px;
-               margin: 0 auto;
-               
-            }
-            #spanBt{
-                
-                width: 160px;
-               margin: 0 auto;
-            }
-            #ip1{
-                position: relative;
-               top:-32px;
-               left:60px;
-            }
-            #s1{
-                padding: 15px;
-                background: #282c32;
-                color: white;
-                border-radius: 5px;
-            font-size: 14px;
-            position: relative;
-            left: -38px;
-            }
+           
             
-            #s2{
-                padding: 15px;
-                background: #282c32;
-                color: white;
-                border-radius: 5px;
-                font-size: 14px;
-                position: relative;
-                left: 37px;
-
+            a{
+                 text-decoration: none;
+                color: #007bff;
+            }
+            a:hover{
+                 text-decoration: underline;
             }
             
         </style>
         <title>
-        Tamash App Login
+            Tamash App Login
         </title>
 
-    </head>
+    </head> 
     <body>
         <div id="main">
-            <div class="div-img">
+            <div id="containerImg">
                 <img src="loginTamashaLogo.efffc379.svg"/>
             </div>
-            <div id="PhoneNo">
-                <p id="phone">Enter mobile number</p>
+            <div id="containerPhoneTb">
+                <p>
+                    Enter mobile number
+                </p>
             </div>  
-            <div id="span" >
-                    <!-- color: white;
-                background-color: #282c32;
-                border: none;
-                width:170px;
-                border-radius: 5px; -->
-                <span id="s2">| </span>    
-                <span id="s1">+92 </span>
-                    
-                    <input id="ip1"  type="text" style="border: none; outline: none; flex: 1; height: 47px; width: 220px;" placeholder="3XX XXXX XXX">
-                </div>
+            <div id="containerPrefix" >
+                <span id="prefixVerticalBar">
+                    | 
+                </span>    
+                <span id="prefix92">
+                    +92 
+                </span>
+                <input id="EnterNumberTb"  type="text" style="border: none; outline: none; flex: 1; height: 47px; width: 220px;" placeholder="3XX XXXX XXX" />
+            </div>
                 
-            <div id="spanBt" class="button">
-                <button>Continue</button>
+            <div id="ContainerContinueBtn" class="button">
+                <button>
+                    Continue
+                </button>
             </div>
             <div>
-                <p id="otp" style="margin-top: 45px;">Enter the code sent to your mobile number</p> 
+                <p id="paraEnterOtp" style="margin-top: 45px;">Enter the code sent to your mobile number</p> 
             </div>
 
-            <div class="div-otp">
+            <div id="ContainerOtpBox">
                  <div>
-                <input class="OTP" type="text" maxlength="1" pattern="[0-9]" >
+                <input class="OtpBox" type="text" maxlength="1" pattern="[0-9]" >
                 </div>
                 <div>
-                <input class="OTP" type="text" maxlength="1" pattern="[0-9]">
+                <input class="OtpBox" type="text" maxlength="1" pattern="[0-9]">
                 </div>
                 <div>
-                <input class="OTP" type="text" maxlength="1" pattern="[0-9]">
+                <input class="OtpBox" type="text" maxlength="1" pattern="[0-9]">
                 </div>
                 <div>
-                <input class="OTP" type="text" maxlength="1" pattern="[0-9]">
+                <input class="OtpBox" type="text" maxlength="1" pattern="[0-9]">
                 </div>
-
- 
             </div>
-                
-                <div id="login" class="button">
+                <div id="loginBtn" class="button">
                     <button style="margin-top: 10px;">Login</button>
                 </div>
             <div style="margin-top: 45px;">
-                <p style="font-size: 14px;">By logging in you agree to our <a href="https://tamashaweb.com/terms-of-use#google_vignette" target="_blank">Terms & Conditions</a></p>
+                <p style="font-size: 14px;">
+                    By logging in you agree to our 
+                    <a href="https://tamashaweb.com/terms-of-use#google_vignette" target="_blank">
+                        Terms & Conditions
+                    </a>
+                </p>
             </div>
         </div> 
-
-
-        
     </body>
 </html>
